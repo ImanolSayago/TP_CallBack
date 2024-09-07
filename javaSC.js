@@ -129,9 +129,9 @@ let mensaje = "Gracias por esperar";
 esperarcallback(mensaje,function(mensaje)
 {
     console.log(mensaje);
-})*/
+})
 
-/*EJERCICIO4_P2*/
+        //EJERCICIO4_P2//
 
 let arregloxd=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 
@@ -152,4 +152,101 @@ filtrarpares(arregloxd,function(arregloxd)
     
 } 
 );
+
+
+
+        //EJERCICIO6_P2//
+
+
+        //PRACTICANDO SETS//
+
+const miset= new Set([1,2,3,4,5]);
+miset.add(6);
+miset.delete(3);
+console.log(miset);
+
+
+        //EJERCICIO7_P2//
+
+    //convertir el set anterior en un array//
+
+const arraydesdeset = Array.from(miset);
+console.log(arraydesdeset);*/
+
+/*EJERCICIO8_P2
+
+const arreglo8=[1,2,2,3,4,4,5,];
+
+const setborrador = new Set(arreglo8);
+
+const arreglonuevo = Array.from(setborrador);
+console.log(arreglonuevo);
+
+
+
+        //EJERCICIO9_P2//
+
+let encontrado = setborrador.has(4);
+if(encontrado==true)
+{
+    console.log("El valor 4 si se encuentra dentro del SET");
+}
+else
+{
+    console.log("El valor no se encuentra dentro del set");
+}*/
+
+
+
+        //EJERCICIO10_P2
+
+/*const miset = new Set([1,2,3,4,5,6,7,8,9,10]);
+
+miset.forEach(function(valores)
+{
+    console.log(valores);
+})*/
+
+
+        //PRACTICA DE MAPS//
+
+        
+        //EJERCICIO11//
+
+const mimap = new Map();
+
+mimap.set('nombre', 'Juan');
+mimap.set('edad',30);
+mimap.set('ciudad','Madrid');
+
+console.log("Mostrando el map antes de la eliminacion de ciudad:",mimap);
+//añadiendo nueva entrada//
+
+console.log("Mostrando el map despues de la eliminacion y el añadido de pais");
+mimap.set('pais','españa');
+mimap.delete('ciudad');
+
+console.log(mimap);
+
+console.log('Accediendo solo a la propiedad nombre:',mimap.get('nombre'));
+
+mimap.forEach(function(valor,k)
+{
+    console.log("La clave es:",k,"y su valor es:",valor);
+})
+
+let existe = mimap.has('edad');
+
+if(existe ==true)
+{
+    console.log("SI existe la clave edad, ahora te muestro su valor");
+    console.log(mimap.get('edad'));
+}
+else
+{
+    console.log("No existe la clave edad");
+}
+
+const arraydesdeMAP =Array.from(mimap);
+console.log(arraydesdeMAP);
 
