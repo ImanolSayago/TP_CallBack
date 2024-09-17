@@ -212,7 +212,7 @@ miset.forEach(function(valores)
 
         
         //EJERCICIO11//
-
+/*
 const mimap = new Map();
 
 mimap.set('nombre', 'Juan');
@@ -248,5 +248,58 @@ else
 }
 
 const arraydesdeMAP =Array.from(mimap);
-console.log(arraydesdeMAP);
+console.log(arraydesdeMAP);*/
+
+/*EJERCICIOS AVANZADOS*/
+
+//E1
+/*
+const personas = [
+    { nombre: "Juan", edad: 20 },
+    { nombre: "María", edad: 25 },
+    { nombre: "Pedro", edad: 30 }
+  ];
+
+  const nombres = personas.map(persona => persona.nombre)
+  console.log(nombres);*/
+
+  //E2
+/*
+  const personas =  [
+    { nombre: "Carlos", edad: 17 },
+    { nombre: "Ana",edad: 23 }, 
+    { nombre: "Luis", edad: 16}
+];
+
+const mayores = personas.filter(persona=> persona.edad>18);
+console.log(mayores);*/
+
+//E3
+/*
+const arreglo3 = [2, 3, 4, 2, 3, 5, 4, 5, 6];
+
+const maparepetido = new Map(); 
+
+arreglo3.forEach(numero => {
+    if(maparepetido.has(numero))
+    {
+        maparepetido.set(numero, maparepetido.get(numero)+1);
+    }
+    else
+    {
+        maparepetido.set(numero,1);
+    }
+});
+
+console.log(maparepetido);*/
+
+//ejercicio 5
+
+let objeto = 
+{
+    a:1,
+    b:2,
+    c:3
+};
+
 
